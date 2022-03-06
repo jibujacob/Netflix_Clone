@@ -11,11 +11,11 @@ const HamburgerMenu = () => {
     return (
         <div className='hamburgerMenu'>
             {isMenuClicked 
-            ? <CloseIcon className="hamburgerMenuIcon" onClick={() => setIsMenuClicked(!isMenuClicked)}/>
-            : <MenuIcon className="hamburgerMenuIcon" onClick={() => setIsMenuClicked(!isMenuClicked)}/>
+            ? <CloseIcon data-testid="hamburgerMenu" className="hamburgerMenuIcon" onClick={() => setIsMenuClicked(!isMenuClicked)}/>
+            : <MenuIcon data-testid="hamburgerMenu" className="hamburgerMenuIcon" onClick={() => setIsMenuClicked(!isMenuClicked)}/>
             }
             {isMenuClicked 
-                ? <div className="hamburgerMenuContainer">
+                ? <div data-testid="hamburgerMenuOptions" className="hamburgerMenuContainer">
                     <Options/>
                 </div>
 

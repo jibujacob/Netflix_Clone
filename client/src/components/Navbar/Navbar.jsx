@@ -27,7 +27,7 @@ const Navbar = () => {
     },[]);
 
     return (
-        <div className={isScrolled ? "navbar scrolled" : "navbar"}>
+        <header data-testid="app-header" className={isScrolled ? "navbar scrolled" : "navbar"}>
             <div className="container">
                 <div className="left">
                     {isMobile ? <HamburgerMenu/> : null}
@@ -59,7 +59,7 @@ const Navbar = () => {
 
                 </div>
             </div>
-        </div>
+        </header>
     )
 }
 
