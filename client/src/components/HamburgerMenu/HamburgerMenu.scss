@@ -1,0 +1,21 @@
+.hamburgerMenu {
+  .hamburgerMenuIcon {
+    margin: 0 15px;
+    cursor: pointer;
+  }
+
+  .hamburgerMenuContainer {
+    background-color: var(--main-color);
+    top: 70px;
+    left: 0;
+    height: 100vh;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    padding-left: 50px;
+
+    span {
+      padding: 30px 0;
+    }
+  }
+}

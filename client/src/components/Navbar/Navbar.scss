@@ -18,10 +18,13 @@
     align-items: center;
     justify-content: space-between;
 
+    @media screen and (max-width: 500px) {
+      padding: 0 20px;
+    }
+
     .left {
       display: flex;
       align-items: center;
-
       .navbarLogo {
         height: 25px;
         margin-right: 40px;
